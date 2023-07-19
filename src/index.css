@@ -1,0 +1,247 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Body styles */
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+/* Root div styles */
+#root {
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar styles */
+.navbar {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  padding: 0 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav h5 {
+  color: #999;
+  margin-right: 10px;
+}
+
+.addhabit-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 8px 20px;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+}
+
+.addhabit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Modal styles */
+.modal-content {
+  background-color: #f3f3f3;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+/* Habits components styles */
+.habits {
+  width: 100%;
+}
+
+/* Habit styles */
+.habit {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: background-color 0.3s ease;
+}
+
+.habit:hover {
+  background-color: #e9e9e9;
+}
+
+.habit-left {
+  display: flex;
+  align-items: center;
+}
+
+.habit-left i {
+  color: #4caf50;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 10px;
+}
+
+.day-complete {
+  color: #888;
+  font-size: small;
+}
+
+.habit-right {
+  display: flex;
+  align-items: center;
+}
+
+.log-btn {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 7px;
+  margin-right: 10px;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.log-btn:hover {
+  background-color: #999;
+}
+
+.log-btn i {
+  margin-right: 5px;
+}
+
+.fa-trash {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.fa-trash:hover {
+  background-color: #999;
+}
+
+/* Week view container styles */
+.days-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Day view component styles */
+.day-container {
+  height: 100px;
+  width: 150px;
+  background-color: #ddd;
+  border-radius: 20px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.day-container:hover {
+  background-color: #ccc;
+}
+
+p {
+  margin: 0;
+}
+
+.circle-icon {
+  font-size: 24px;
+  margin: 5px 11px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.circle-icon.active {
+  color: #4caf50;
+}
+
+/* Additional styles */
+
+/* Add a subtle gradient background to the body */
+body {
+  background: linear-gradient(to bottom right, #f6f6f6, #e6e6e6);
+}
+
+/* Add a subtle box shadow to the root div */
+#root {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Style the active link in the navbar */
+.right-nav a.active {
+  font-weight: bold;
+}
+
+/* Style the add habit button on hover */
+.addhabit-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Style the log button on hover */
+.log-btn:hover {
+  background-color: #999;
+  transform: scale(1.05);
+}
+
+/* Style the trash icon on hover */
+.fa-trash:hover {
+  background-color: #999;
+  transform: scale(1.05);
+}
+
+/* Style the circle icon on hover */
+.circle-icon:hover {
+  color: #4caf50;
+}
+
+/* Add a transition effect to the habit card */
+.habit {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animate the habit card on hover */
+.habit:hover {
+  background-color: #e9e9e9;
+  transform: scale(1.02);
+}
+
+/* Style the day container on hover */
+.day-container:hover {
+  background-color: #ccc;
+  transform: scale(1.02);
+}
